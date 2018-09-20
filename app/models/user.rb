@@ -9,7 +9,7 @@ class User < ActiveRecord::Base
 
   serialize :friends, Array
 
-  def self.liked(ids)
+  def self.added(ids)
     ids = ids.empty? ? [0] : ids
     Friend.where("id IN (?)", ids)
   end
