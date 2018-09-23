@@ -6,6 +6,6 @@
     age: Faker::Number.number(2),
     gender: Faker::Gender.binary_type,
     quote: Faker::MichaelScott.quote,
-    photo: Faker::LoremFlickr.grayscale_image("100x120", ['people'], name)
+    photo: Faker::LoremFlickr.grayscale_image("100x120", ['people'])
   )
 end
